@@ -30,7 +30,7 @@ jobs:
         id: report
         with:
           modules: 'app'
-          configuration: 'productionReleaseRuntimeClasspath'
+          configuration: 'releaseRuntimeClasspath'
       - name: Comment
         if: steps.report.outputs.exists-diff == 'true' || failure()
         uses: yumemi-inc/comment-pull-request@v1
