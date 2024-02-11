@@ -1,4 +1,7 @@
 # MotionScrollApp for Android
+
+[![CI](https://github.com/ykws/motion-scroll-android/actions/workflows/ci.yml/badge.svg)](https://github.com/ykws/motion-scroll-android/actions/workflows/ci.yml)
+
 Demonstration scroll by [motion sensor](https://developer.android.com/guide/topics/sensors/sensors_motion
 ) for Android. Tap the sensor button at the bottom left, and tilt it forward to scroll down, or tilt it backward to scroll up.
 
