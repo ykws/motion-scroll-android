@@ -24,10 +24,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-    - name: Report Android Lint results via reviewdog
-      uses: reviewdog/action-android-lint@v1
+    - name: Run Android Lint
+      uses: dvdandroid/action-android-lint@v1.2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        reporter: github-pr-review # or github-pr-check
-        level: warning
-        fail_on_error: false # trueにするとエラーでfail
+        lint_xml_file: app/build/reports/lint-results.xml
